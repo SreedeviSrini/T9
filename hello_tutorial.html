@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+  <!--
+  Copyright (c) 2012 The Native Client Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+  -->
+
+<head>
+  <title>Predictor!</title>
+
+ 
+</head>
+<!--<body onload="pageDidLoad()">-->
+<body>
+
+<h1>Welcome to T9 Predictor!!</h1>
+<p>
+  <div id="listener">
+<!--    
+    <embed name="nacl_module"
+       id="hello_tutorial"
+       width=0 height=0
+       src="hello_tutorial.nmf"
+       type="application/x-nacl" />
+-->	   
+  </div>
+</p>
+
+<div id="status_field" style="color:#0000FF"><h2>NO-STATUS</h2></div>
+<div id="word_field"></div>
+<div id="userword"></div>
+<!--<input type="text" name="predict" id="predict" list="predictlist" pattern=[2-9]/>-->
+<input type="text" name="predict" id="predict" readonly="readonly"/>
+
+<select id = "wordlist" >
+</select>
+<style>
+input.btn {   color:#050;   font: bold small 'trebuchet ms',helvetica,sans-serif; background-color: #fed; border:1px solid;   border-color: #696 #363 #363 #696;}
+</style>
+ 
+<div id="VirtualKey">
+    <input id="btn1" type="button" class="btn" name="1" accesskey ="a" value="1&#10#?!$&#10-_,@" />
+    <input id="btn2" type="button" class="btn"name="2" accesskey = "b" value="2&#10abc" />
+    <input id="btn3" type="button" class="btn"name="3" value="3&#10def"  />
+    <br />
+    <input id="btn4" type="button" class="btn" name="4" value=" 4&#10ghi" />
+    <input id="btn5" type="button" class="btn"name="5" value="5&#10jkl" />
+    <input id="btn6" type="button" class="btn"name="6" value="6&#10mno" />
+    <br />
+    <input id="btn7" type="button" class="btn" name="7" value="7&#10pqrs" />
+    <input id="btn8" type="button" class="btn" name="8" value="8&#10tuv"  />
+    <input id="btn9" type="button" class="btn" name="9" value="9&#10wxyz" />
+    <br />
+	<br />
+    <input id="btns" type="button" class="btn" name=" " value="Space" />
+    <input id="btnc" type="button" class="btn" name="c" value="Clear" />
+	<br />
+	<br />
+</div>
+<!--
+<style>
+  #byte_content {
+    margin: 5px 0;
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #byte_range { margin-top: 5px; }
+</style>
+-->
+<input type="file" id="files" name="file" class="btn" />  
+<span class="readBytesButtons">
+  <button id="fileload">Load file</button>
+</span>
+<!--
+<div id="byte_range"></div>
+<div id="byte_content"></div> 
+-->
+<script src="dict.js"> </script>
+
+</head>
+</html>
