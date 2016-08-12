@@ -1,10 +1,11 @@
 "# T9 over Salt and Pepper"
  
-The repository contains an implementation for word prediction for T9 keypad based on a dictionary. 
-Google's Native Client(NaCl) aka Salt and Pepper Plugin was used to provide an user interface over the browser.
+This repository contains an implementation for word prediction for T9 keypad based on a dictionary. 
+Google's Native Client(NaCl) aka Salt and Pepper Plugin was used to provide an user interface(UI) over the browser.
 
 
 The contents include
+
 1. predictor_new.cc - a stand alone C based 9-way tree implementation for T9
 
 2. hello_tutorial.cc - an adaptation from native client/pepper library to interface with predictor
